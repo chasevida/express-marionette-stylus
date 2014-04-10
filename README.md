@@ -2,7 +2,7 @@
 
 A quick start node application that makes use of Express, Marionette, Handlebars and Stylus. It also makes extensive use of Grunt, Mocha, Chai and Requirejs.
 
-[![Build Status](https://magnum.travis-ci.com/chasevida/express-marionette-stylus.png?branch=master)](https://magnum.travis-ci.com/chasevida/express-marionette-stylus)
+[![Build Status](https://travis-ci.org/chasevida/express-marionette-stylus.svg?branch=master)](https://travis-ci.org/chasevida/express-marionette-stylus)
 
 ### Installation
 The recommended way to get a working copy of this project is to clone the repository.
