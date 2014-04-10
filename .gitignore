@@ -1,0 +1,4 @@
+client/vendor/
+node_modules/
+public/
+*.local.json

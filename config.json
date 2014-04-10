@@ -1,0 +1,17 @@
+{
+    "development": {
+        "development": true,
+        "assetPath": "",
+        "googleAnalytics": "UA-XXXXXXXX-X"
+    },
+
+    "staging": {
+        "assetPath": "",
+        "googleAnalytics": "UA-XXXXXXXX-X"
+    },
+
+    "production": {
+        "assetPath": "",
+        "googleAnalytics": "UA-XXXXXXXX-X"
+    }
+}
