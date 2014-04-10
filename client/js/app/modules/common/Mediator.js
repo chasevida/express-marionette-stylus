@@ -1,4 +1,4 @@
-// app/common/Mediator.js
+// app/modules/common/Mediator.js
 
 define([
     "backbone.wreqr"

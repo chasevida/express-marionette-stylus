@@ -2,6 +2,8 @@
 
 A quick start node application that makes use of Express, Marionette, Handlebars and Stylus. It also makes extensive use of Grunt, Mocha, Chai and Requirejs.
 
+[![Build Status](https://magnum.travis-ci.com/chasevida/express-marionette-stylus.png?branch=master)](https://magnum.travis-ci.com/chasevida/express-marionette-stylus)
+
 ### Installation
 The recommended way to get a working copy of this project is to clone the repository.
 
@@ -49,7 +51,7 @@ The grunt build tasks runs the javascript code form `client/js` via the requirej
 Please note the `public` directories are periodically cleaned during grunt tasks. DO NOT put source code or artwork in this directory as it will be permanently overwritten/deleted.
 
 ### Project layout
-*	`client` contains the client source code (.js, .less, .jpg, .png, .gif)
+*	`client` contains the client source code (.js, .styl, .jpg, .png, .gif)
 *	`public` is the web root directory where files are served over http. All content in this directory should be generated via the grunt build scripts.
 *	`server` contains code to generate the nodejs/express development server.
 *	`test` contains all source code tests

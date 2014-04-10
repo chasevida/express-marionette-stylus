@@ -1,4 +1,4 @@
-// app/common/Api.js
+// app/modules/common/Api.js
 
 define([
     "app/Application",

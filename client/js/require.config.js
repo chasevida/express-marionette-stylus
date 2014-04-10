@@ -7,7 +7,7 @@ requirejs.config({
     paths: {
         "backbone":             "../vendor/backbone/backbone",
         "backbone.babysitter":  "../vendor/backbone.babysitter/lib/amd/backbone.babysitter",
-        "backbone.hammer":    "../vendor/backbone.hammer/backbone.hammer",
+        "backbone.hammer":      "../vendor/backbone.hammer/backbone.hammer",
         "backbone.picky":       "../vendor/backbone.picky/src/backbone.picky",
         "backbone.syphon":      "../vendor/backbone.syphon/lib/amd/backbone.syphon.min",
         "backbone.validation":  "../vendor/backbone-validation/dist/backbone-validation-amd-min",

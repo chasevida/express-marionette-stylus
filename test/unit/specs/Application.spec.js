@@ -126,10 +126,10 @@ define(function(require) {
 				});
 			});
 
-			it( "should trigger 'app:initialize:start' event", function(done) {
+			it( "should trigger 'bootstrap:initialize' event", function(done) {
 			      var spy = sinon.spy();
 			      sinon.spy(Backbone.history, "start");
-				Mediator.vent.on("app:initialize:start", spy);
+				Mediator.vent.on("bootstrap:initialize", spy);
 				expect( spy.called ).to.be.false;
 
 				App.onInitializeAfter(function() {

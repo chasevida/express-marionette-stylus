@@ -15,7 +15,6 @@ define([
         pre: function() {
             console.log("BootstrapModule:vent:pre");
             Mediator.vent.trigger("bootstrap:pre");
-            this.start();
         },
 
         start: function() {
