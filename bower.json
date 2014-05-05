@@ -4,12 +4,12 @@
     "version": "0.0.0",
     "repository": {
         "type": "git",
-        "url": "git@github.com:yrnz/express-marionette-stylus.git"
+        "url": "git@github.com:chasevida/express-marionette-stylus.git"
     },
     "author": "Mark",
     "readmeFilename": "README.md",
     "bugs": {
-        "url": "https://github.com/yrnz/express-marionette-stylus/issues"
+        "url": "https://github.com/chasevida/express-marionette-stylus/issues"
     },
     "ignore": [
         "**/.*",
