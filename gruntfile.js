@@ -50,7 +50,9 @@ module.exports = function (grunt) {
             all: ["test/unit/**/*.html"],
 			options: {
 				threshold: 90,
-				run: false
+				run: false,
+                log : true,
+                logErrors: true
 			}
 		},
 

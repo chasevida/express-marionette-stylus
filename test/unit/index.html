@@ -13,7 +13,9 @@
 
 	<script data-main="bootstrap" src="../../client/vendor/requirejs/require.js"></script>
 
-	<script src="../../client/vendor/blanket/dist/qunit/blanket.js" data-cover-only="../../client/js/app"></script>
+    <script src="../../client/vendor/blanket/dist/qunit/blanket.js"
+            data-cover-only="../../client/js/app"
+            data-cover-never="['test']"></script>
 	<script type="text/javascript" src="../../node_modules/grunt-blanket-mocha/support/mocha-blanket.js"></script>
 
 	<script>
