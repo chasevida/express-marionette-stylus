@@ -37,14 +37,14 @@ This project makes heavy use of JavaScript, HTML and CSS. The main front-end app
 ### Grunt Tasks
 If your not familiar with [Grunt](http://gruntjs.com/) check it out as this project makes heavy use of it. All grunt tasks can be found at the bottom of the `gruntfile.js`. Some of the main tasks are as follows:
 
-	$ grunt					- runs the app on http://localhost:8080/
+	$ grunt					- runs the app on http://localhost:8080
 	$ grunt build			- builds a web version in the public directory
 	
 	$ grunt test			- runs all mocha test files
 	$ grunt test:intg		- runs integration tests using webdriver
 	
 ### Gulp Tasks
-If your not familiar with [Gulp](http://gulpjs.com/) make sure you check it out. It's another build tool that uses streaming for faster productivity. It's still maturing but the tasks added here work blazingly fast. To run the default tasks use the blow command otherwise read through the `gulpfile.js` for a further breakdown of tasks.
+If your not familiar with [Gulp](http://gulpjs.com/) make sure you check it out. It's another build tool that uses streaming for faster productivity. It's still maturing but the tasks added here work blazingly fast. To run the default tasks use the below command otherwise read through the `gulpfile.js` for a further breakdown of tasks.
 
 	$ gulp					- runs the app on http://localhost:8080
 	
