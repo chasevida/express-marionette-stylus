@@ -4,6 +4,7 @@ var gulp        = require('gulp'),
     clean       = require('gulp-clean'),
     livereload  = require('gulp-livereload'),
     nodemon     = require('gulp-nodemon'),
+    sequence    = require('run-sequence'),
     stylus      = require('gulp-stylus');
 
 
@@ -45,7 +46,7 @@ gulp.task('scripts:dev', function() {
  */
 
 gulp.task('assets:dev', function() {
-    gulp.src( indir + 'img/**/*.{png,jpg,gif}' )
+    gulp.src( indir + 'img/**/*.{png,jpg,gif,ico}' )
         .pipe(gulp.dest( outdir + 'img/' ))
         .pipe( livereload() );
 });
@@ -77,7 +78,7 @@ gulp.task('watch', function () {
     console.log("watch event fired");
     gulp.watch( indir + '/styles/**/*.styl', ['stylus:dev']);
     gulp.watch( indir + '/js/**/*.js', ['scripts:dev']);
-    gulp.watch( indir + '/img/**/*.{png,jpg,gif}', ['assets:dev']);
+    gulp.watch( indir + '/img/**/*.{png,jpg,gif,ico}', ['assets:dev']);
     gulp.watch( 'views/**/*.html', ['views:dev']);
 });
 
@@ -108,14 +109,14 @@ gulp.task('demon', function () {
  * General Build Tasks
  */
 
-gulp.task('default', [
-    'clean:dist', 
-    'stylus:dev', 
-    'scripts:dev', 
-    'assets:dev', 
-    'demon'
-]);
+gulp.task('default', function(done) {
 
-
+    sequence('clean:dist', [
+        'stylus:dev', 
+        'scripts:dev', 
+        'assets:dev',
+        'demon'
+        ], done);
+});
 
 
